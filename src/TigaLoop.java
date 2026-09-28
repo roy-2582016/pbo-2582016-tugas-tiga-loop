@@ -33,8 +33,19 @@ public class TigaLoop {
             c++;
         } while (c <= n);
         System.out.println();
-
-
+        // 4) Bukti off-by-one dengan dua penghitung terpisah
+        System.out.println();
+        int kurang = 0;
+        for (int i = 1; i < n; i++) {
+            kurang++;
+        }
+        int kurangSama = 0;
+        for (int i = 1; i <= n; i++) {
+            kurangSama++;
+        }
+        System.out.println("i <  n berputar : " + kurang + " kali");
+        System.out.println("i <= n berputar : " + kurangSama + " kali");
+        
     }
 }
 
